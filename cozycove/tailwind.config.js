@@ -1,7 +1,7 @@
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: [
     "./src/**/*.{html,js,jsx}",
     flowbite.content(),
@@ -14,3 +14,4 @@ module.exports = {
   ],
 }
 
+export default config;
