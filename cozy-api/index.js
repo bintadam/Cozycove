@@ -19,4 +19,13 @@ mongoose.connect(process.env.MONGO)
     .catch(error=> console.log(error))
 
 
+app.use((err, req, res, next)=>{
+    const statusCode =  err.statusCode || 500
+    const message =  err.message || 'Internet Server Error'
+    res.status(statusCode).json({
+        success: false,
+        statusCode,
+        message
+    })
+})
 
