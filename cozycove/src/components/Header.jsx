@@ -1,12 +1,14 @@
 import { Navbar } from "flowbite-react";
-import logoImg from '../assets/logo.svg'
+import logoImg from '../assets/logo.png'
 
 export default function Header() {
   return (
     <Navbar>
       <Navbar.Brand>
-        <img src={logoImg} alt="logo" className="h-28"/>
-        <span className="font-semibold text-blue-500">cozycove</span>
+        <div className="flex ">
+          <img src={logoImg} alt="logo" className="h-24"/>
+          <span className="font-semibold text-blue-500">cozycove</span>
+        </div>
       </Navbar.Brand>
       <Navbar.Toggle/>
       <Navbar.Collapse>

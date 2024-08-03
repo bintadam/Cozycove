@@ -1,10 +1,6 @@
 import mongoose from 'mongoose'
 
 const userSchema = new mongoose.Schema({
-    countryCode:{
-        type:String,
-        required:true,
-    },
     phoneNumber:{
         type:String,
         required:true,
