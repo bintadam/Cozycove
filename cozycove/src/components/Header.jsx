@@ -5,10 +5,8 @@ export default function Header() {
   return (
     <Navbar>
       <Navbar.Brand>
-        <div className="flex ">
-          <img src={logoImg} alt="logo" className="h-24"/>
-          <span className="font-semibold text-blue-500">cozycove</span>
-        </div>
+        <img src={logoImg} alt="logo" className="h-16"/>
+        <span className="font-semibold text-rose-500 text-xl">cozycove</span>
       </Navbar.Brand>
       <Navbar.Toggle/>
       <Navbar.Collapse>
