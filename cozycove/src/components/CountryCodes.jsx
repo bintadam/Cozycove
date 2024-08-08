@@ -1,8 +1,8 @@
 export default function Countrycodes() {
   return (
-    <>
-    <label>Country code</label>
-    <select name="countryCode" id="" className="font-light" label="Country code">
+    <div className="flex flex-col border p-2">
+    <label className="text-sm font-thin">Country code</label>
+    <select name="countryCode" id="" className="border-0 focus:outline-none p-0 font-extralight">
         <option value="44">UK (+44)</option>
         <option value="1">USA (+1)</option>
         <option value="213">Algeria (+213)</option>
@@ -72,7 +72,7 @@ export default function Countrycodes() {
         <option value="241">Gabon (+241)</option>
         <option value="220">Gambia (+220)</option>
         <option value="7880">Georgia (+7880)</option>
-        <option value="49">Germany (+49)</option>
+        <option value="49" selected >Germany (+49)</option>
         <option value="233">Ghana (+233)</option>
         <option value="350">Gibraltar (+350)</option>
         <option value="30">Greece (+30)</option>
@@ -219,6 +219,6 @@ export default function Countrycodes() {
         <option value="260">Zambia (+260)</option>
         <option value="263">Zimbabwe (+263)</option>
     </select>
-    </>
+    </div>
   )
 }

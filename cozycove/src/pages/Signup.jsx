@@ -1,5 +1,9 @@
 import { Button, TextInput } from "flowbite-react"
-import Countrycodes from "../components/Countrycodes"
+import Countrycodes from "../components/CountryCodes"
+import FacebookOAuth from "../components/OAuth/FacebookOAuth"
+import AppleOAuth from "../components/OAuth/AppleOAuth"
+import EmailOAuth from "../components/OAuth/EmailOAuth"
+import GoogleOAuth from "../components/OAuth/GoogleOAuth"
 
 export default function Signup() {
   // const [formData, setFormData] = useState({})
@@ -13,24 +17,22 @@ export default function Signup() {
           <div className=" ">
             <form>
               <h5 className="py-4 text-2xl font-medium">Welcome to Aircove</h5>
-              <div className="rounded-lg">
+              <div className="border rounded-lg">
                   <Countrycodes/>
-                  <TextInput type="text" id='phonenumber' placeholder="Phone number" className="border-0"/>
+                  <TextInput type="number" id='phonenumber' placeholder="Phone number" className="border p-2"/>
               </div>
               <p className="text-xs font-light my-3">We’ll call or text you to confirm your number. Standard message and data rates apply. <span className="font-semibold underline">Privacy Policy</span></p>
               <Button type="submit" className="w-full py-1 text-lg bg-gradient-to-r from-rose-500 to-pink-600">Continue</Button>
+              <div className="flex justify-between mt-3">
+                <hr className=""/>
+                <span className="font-light text-xs ">or</span>
+                <hr className=""/>
+              </div>
+              <FacebookOAuth className="my-2"/>
+              <GoogleOAuth/>
+              <AppleOAuth/>
+              <EmailOAuth/>
             </form>
-          </div>
-          <div className="flex justify-between mt-2">
-            <hr className="flex-grow border-t h-1 mt-3"/>
-            <p className="px-3">or</p>
-            <hr className="flex-grow border-t  h-1 mt-3"/>
-          </div>
-          <div>
-            <Button className="w-full py-1 text-lg  bg-white hover:bg-sky-700 text-black border border-black rounded-lg my-2">Continue with Facebook</Button>
-            <Button className="w-full py-1 text-lg bg-white text-black border border-black rounded-lg my-2">Continue with Google</Button>
-            <Button className="w-full py-1 text-lg bg-white text-black border border-black rounded-lg my-2">Continue with Apple</Button>
-            <Button className="w-full py-1 text-lg bg-white text-black border border-black rounded-lg my-2">Continue with email</Button>
           </div>
         </div>
       </div>
