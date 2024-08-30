@@ -1,5 +1,9 @@
+import SliderCarousel from "../components/SliderCarousel";
+
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <SliderCarousel/>
+    </div>
   )
 }

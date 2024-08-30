@@ -9,7 +9,7 @@ export default function Signup() {
   // const [formData, setFormData] = useState({})
   return (
     <div className="md:grid place-content-center">
-      <div className="md:border border-slate-500 rounded-lg m-2 p-2">
+      <div className="md:border border-slate-500 rounded-lg m-f2 p-2">
         <div className="border-b mb-4">
           <h3 className="text-center font-semibold text-base md:py-4">Log in or sign up</h3>
         </div>
