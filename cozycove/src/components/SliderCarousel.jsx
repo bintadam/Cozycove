@@ -23,7 +23,7 @@ import { GiPalmTree } from "react-icons/gi";
 import { IoMdColorPalette } from "react-icons/io";
 import { MdOutlineRoomService } from "react-icons/md";
 import { RiTicket2Line } from "react-icons/ri";
-import { CustomRightArrow, CustomLeftArrow } from './CustomArrows'
+// import { CustomRightArrow, CustomLeftArrow } from './CustomArrows'
 
 const responsive ={
   desktop: {
@@ -53,33 +53,80 @@ export default function SliderCarousel() {
         responsive={responsive} 
         ssr={true} // means to render carousel on server-side.
         infinite={false}
-        itemClass="carousel-item-padding-40-px"
-        customRightArrow={<CustomRightArrow />}
-        customLeftArrow={<CustomLeftArrow />}
+        // customRightArrow={<CustomRightArrow />}
+        // customLeftArrow={<CustomLeftArrow />}
         >
-        <div><RiTicket2Line size={24}/>Icons</div>
-        <div><MdOutlineVilla size={28}/>Tiny homes</div>
-        <div><LiaSwimmingPoolSolid size={28}/>Amazing pools</div>
-        <div><MdOutlineRoomService size={28}/>Luxe</div>
-        <div><GiCaveEntrance size={23}/>Caves</div>
-        <div><TbBeachOff size={25}/>Beachfront</div>
-        <div><MdCabin size={25}/>Cabins</div>
-        <div><GiPalmTree size={25}/>Tropical</div>
-        <div><BsFire size={24}/>Trending</div>
-        <div><TbUfo size={25}/>OMG!</div>
-        <div><GiCastle size={26}/>Castles</div>
-        <div><FaSkiing size={25}/>Ski-in/out</div>
-        <div><GiGrapes size={25}/>Vineyards</div>
-        <div><SiGitea size={25}/>Bed & breakfasts</div>
-        <div><GiCampingTent size={25}/>Camping</div>
-        <div><TbWaterpolo size={32}/>Lake</div>
-        <div><GiGolfFlag size={25}/>Golfing</div>
-        <div><VscPiano size={23}/>Grand pianos</div>
-        <div><GiIsland size={32}/>Islands</div>
-        <div><GiModernCity size={25}/>Top cities</div>
-        <div><GiBowlingPin size={25}/>Play</div>
-        <div><IoSnowSharp size={25}/>Artic</div>
-        <div><IoMdColorPalette size={25}/>Creative spaces</div>
+        <div>
+          <RiTicket2Line size={24}/>
+          <span></span>Icons</div>
+        <div>
+          <MdOutlineVilla size={28} className='ml-4'/>
+          <span></span>Tiny homes</div>
+        <div>
+          <LiaSwimmingPoolSolid size={28} className='ml-2'/>
+          <span>Amazing pools</span>
+        </div>
+        <div>
+          <MdOutlineRoomService size={28}/>
+          <span>Luxe</span>
+        </div>
+        <div>
+          <GiCaveEntrance size={23} className='ml-1'/>
+          <span>Caves</span>
+        </div>
+        <div>
+          <TbBeachOff size={25} className='ml-2'/>
+          <span>Beachfront</span>
+        </div>
+        <div>
+          <MdCabin size={25} className='ml-1'/>
+          <span>Cabins</span>
+        </div>
+        <div>
+          <GiPalmTree size={25} className='ml-4'/>
+          <span>Tropical</span></div>
+        <div>
+          <BsFire size={24} className='ml-2'/>
+          <span>Trending</span></div>
+        <div>
+          <TbUfo size={25}/>
+          <span>OMG!</span>
+        </div>
+        <div>
+          <GiCastle size={26} className='ml-2'/>
+          <span>Castles</span></div>
+        <div>
+          <FaSkiing size={25} className='ml-3'/>
+          <span>Ski-in/out</span>
+        </div>
+        <div>
+          <GiGrapes size={25} className='ml-3'/><span>Vineyards</span></div>
+        <div>
+          <SiGitea size={25} className='ml-6'/><span>Bed & breakfasts</span></div>
+        <div>
+          <GiCampingTent size={25} className='ml-2'/><span>Camping</span></div>
+        <div>
+          <TbWaterpolo size={32} /><span>Lake</span></div>
+        <div>
+          <GiGolfFlag size={25} className='ml-2'/><span>Golfing</span></div>
+        <div>
+          <VscPiano size={23} className='ml-4'/><span>Grand pianos</span></div>
+        <div>
+          <GiIsland size={32} className='ml-1'/><span>Islands</span></div>
+        <div>
+          <GiModernCity size={25} className='ml-4'/><span>Top cities</span></div>
+        <div>
+          <GiBowlingPin size={25}/>
+          <span>Play</span>
+        </div>
+        <div>
+          <IoSnowSharp size={25}/>
+          <span>Artic</span>
+        </div>
+        <div>
+          <IoMdColorPalette size={25} className='ml-3'/>
+          <span>Creative spaces</span>
+        </div>
       </Carousel>
     </div>
   )

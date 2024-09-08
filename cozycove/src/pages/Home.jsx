@@ -2,8 +2,9 @@ import SliderCarousel from "../components/SliderCarousel";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen">
       <SliderCarousel/>
+      
     </div>
   )
 }
